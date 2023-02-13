@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Booklick </title>
+    <link rel="icon" href="logo3.png" type="image/gif/png"/>
+
+    <!---------bootstrap CDN------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-----font awesome cdn link --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+
+    <!-----custome css file link---->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-------Website Loader starts here----->
+
+    <div id="preloader"></div>
+
+    <!-------Website Loader ends here----->
+
+
+    <!-----Header section starts here---->
+<header class="header">
+    <div class="header-1">
+        <a href="#" class="logo"><img src="logo.png" width="150" height="50"></a>
+        <div class="wrapper">
+            <div class="search-input">
+                <input type="text" placeholder="Type to Search...">
+                <div class="autocom-box">
+                    <li> ligin form in HTML & CSS </li>
+                    <li> ligin form in HTML & CSS </li>
+                    <li> ligin form in HTML & CSS </li>
+                    <li> ligin form in HTML & CSS </li>
+                    <li> ligin form in HTML & CSS </li>
+                </div>
+                <div class="mag-btn"><i class="fas fa-search"></i> </div>
+            </div>
+        </div>
+  
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="heart"><a href="#" class="fas fa-heart"></a></div>
+            <span>
+            <a href="cart.html" class="cartss">&#x1F6D2;
+            <span id="count">0</span>
+            , <span id="sum">0</span></a>
+            </span>
+            <br>
+            <br>
+            <div id="login-btn"><span><i class="fas fa-user"></i> Log In</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home"> Home </a>
+            <a href="#featured"> Featured </a>
+            <a href="#arrivals"> Arrivals </a>
+            <a href="#authors"> Authors </a>
+            <a href="#publisher"> Publishers </a>
+            <a href="#reviews"> Reviews </a>
+            <a href="#blogs"> Blogs </a>
+            <a href="shop.html" id="shop"> Shop </a>
+        </nav>
+    </div>
+</header>
+
+<!-----Header section ends here---->
+
+<!------Bottom navbar-->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"> </a>
+    <a href="#featured" class="fas fa-list"> </a>
+    <a href="shop.html" class="fa-solid fa-cart-shopping"></a>
+    <a href="#arrivals" class="fas fa-tags"> </a>
+    <a href="#reviews" class="fas fa-comments"> </a>
+    <a href="#blogs" class="fas fa-blog"> </a>
+</nav>
+
+<!-------Log In Form----->
+
+<div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <form action="">
+        <h3>&#x2728; Sign Sn &#x2728;</h3>
+        <span> Username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="" required>
+        <span> Password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="" required>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> Remember me </label>
+        </div>
+        <input type="submit" value="sign in" class="btn" onclick="myFunction()" href="index.html">
+        <p> Forget Password ? <a href="#"> Click Here </a></p>
+        <p> Don't have an account ? <a href="#" id="reg-btn"> Create one </a></p>
+    </form>
+</div>
+
+<!-------Log In Form----->
+
+<!-------Registration Starts Here----->
+
+<div class="reg-form-container">
+    <div id="ex-login-btn" class="fas fa-times"></div>
+    <form action="">
+        <h3> &#x2728; Registration Form &#x2728;</h3>
+        <span> Username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="" required>
+        <span> Phone number</span>
+        <input type="tel" name="" class="box" placeholder="enter your phone number" pattern="[6789][0-9]{9}" id="" required>
+        <span> password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="" required>
+        <span> re-type password</span>
+        <input type="password" name="" class="box" placeholder="confirm your password" id="" required>
+        <div class="checkbox">
+            <input type="checkbox" name="agree" id="agree" value="agree" />
+            <label for='agree'>Do you agree to the terms and privacy policy?</label>
+        </div>
+        <input type="submit" value="sign up" class="btn" onclick="MyFunction()" href="index.html">
+        <p> Already have an account ? <a href="#"> Sign In </a></p>
+    </form>
+</div>
+
+<!-------Registration Ends Here----->
+
+<!-------Home Section starts here----->
+
+<section class="home" id="home">
+    <div class="row">
+        <div class="content">
+            <h3> &#x2728; Get up to 75% Discount &#x2728;</h3>
+            <p> Are you looking for e-books to read?
+                1000+ e-books for very affordable price, you can now have access to our vast collection of premium quality e-books, unlimited of e-books from bestselling authors.
+               </p>
+            <a href="shop.html" class="btn"> Shop now!</a>
+        </div>
+ 
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="book-1.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-7.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-3.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-8.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-5.png" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book-6.png" alt=""></a>
+            </div>
+            <img src="stand3.png" class="stand" alt="">
+        </div>
+    </div>
+</section>
+
+<!-------Home Section ends here----->
+
+<!-------Icon Section starts here----->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-download"></i>
+        <div class="content">
+            <h3> Free Download </h3>
+            <p> Order over ₱500 </p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3> Secure Payment </h3>
+            <p> 100% secure payment </p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3> Easy Returns </h3>
+            <p> 5 days returns </p>
+        </div>
+    </div>
+    
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3> 24/7 Support </h3>
+            <p> call us anytime </p>
+        </div>
+    </div>
+</section>
+<!-------Icon Section ends here----->
+
+<!-------Featured Section starts here----->
+
+<section class="featured" id="featured">
+    <h1 class="heading"><span>	&#x1F4DA;Featured Books</span></h1>
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-10.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> Subliminal Psychology 101 </div>
+                        <h5 class="book_author"> by Michael Pace</h5>
+                        <p class="book_description"> How to Stealthily Penetrate, Influence, and Subdue Anyone's Mind without Them Suspecting a Thing.
+                            Are you curious about how to stealthily infiltrate someone’s mind and get them to do what you want or think how you want without letting them know what you are doing? </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> Subliminal Psychology 101 </h3>
+                    <div class="price"> ₱20 </div>
+                    <a href="#" data-id="1" data-price="20" data-title="Subliminal Psychology 101" class="btn" data-image="book-10.png"> Add to Cart </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-9.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> The Art of Deception </div>
+                        <h5 class="book_author"> by Nichola Capaldi & Miles Smit </h5>
+                        <p class="book_description"> An introduction to critical thinking. Win an argument, defend a case, recognize a fallacy, see through deception, persuaded of skeptic, turn defeat into victory. </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> The Art of Deception </h3>
+                    <div class="price"> ₱30 </div>
+                    <a href="#" data-id="2" data-price="30" data-title="The Art of Deception" class="btn" data-image="book-9.png"> Add to Cart </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-8.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> The Art of Psychological Warfare </div>
+                        <h5 class="book_author"> by Michael T. Stevens </h5>
+                        <p class="book_description"> How to Skillfully Influence People Undetected and How to Mentally Subdue Your Enemies in Stealth Mode. How would you like to have the ultimate power of control over other people? It sounds good, doesn't it? Well, we'll tell you up front, this book will share with you the secrets of powerful people from every walk of life. </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> The Art of Psychological Warfare </h3>
+                    <div class="price"> ₱40</div>
+                    <a href="#" data-id="3" data-price="40" data-title="The Art of Psychological Warfare" class="btn" data-image="book-8.png"> Add to Cart </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-7.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> The Body Language of Liars </div>
+                        <h5 class="book_author"> by Lillian Glass, Phd </h5>
+                        <p class="book_description"> From little white lies to pathological deception. How to See Through the Fibs, Frauds, and
+                            Falsehoods People Tell You Every Day. Being fooled, conned, duped, or just plain lied to can happen to anyone. It doesn’t matter how smart, old, rich, or famous you are.  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> The Body Language of Liars </h3>
+                    <div class="price"> ₱25 </div>
+                    <a href="#" data-id="4" data-price="25" data-title="The Body Language of Liars" class="btn" data-image="book-7.png"> Add to Cart </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-6.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> The Dark Side of Creativity </div>
+                        <h5 class="book_author"> by David H. Cropley </h5>
+                        <p class="book_description"> Book contains chapters by people from disparate fields of study (e.g., psychology, criminal justice, sociology, engineering, education, history, and design) and different areas of focus (e.g., personality development, mental health, deviant behavior, law enforcement, and counterterrorism) in order to illustrate the nature of the dark side of creativity... </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> The Dark Side of Creativity </h3>
+                    <div class="price"> ₱35 </div>
+                    <a href="#" data-id="5" data-price="35" data-title="The Dark Side of Creativity" class="btn" data-image="book-6.png"> Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-5.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> The Dark Side of Personality </div>
+                        <h5 class="book_author"> by Virgil Zeigler-Hill  </h5>
+                        <p class="book_description"> Science and Practice in Social, Personality, and Clinical Psychology.
+                            The dark personality features that have received the most empirical attention during the past decade are the Dark Triad, which is a constellation of personality traits that includes narcissism, psychopathy, and Machiavellianism. </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> The Dark Side of Personality </h3>
+                    <div class="price"> ₱30</div>
+                    <a href="#" data-id="6" data-price="30" data-title="The Dark Side of Personality" class="btn" data-image="book-5.png"> Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-4.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> The Full Facts Book of Cold Reading </div>
+                        <h5 class="book_author"> by Ian Rowland </h5>
+                        <p class="book_description"> They are psychic readings, and everyone has either had one or knows someone who has. People find these readings astonishing, and with good reason, since they are often intriguing and incredible. </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> The Full Facts Book of Cold Reading </h3>
+                    <div class="price"> ₱30 </div>
+                    <a href="#" data-id="7" data-price="30" data-title="The Full Facts Book of Cold Reading " class="btn" data-image="book-4.png"> Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-3.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> Why They Do It</div>
+                        <h5 class="book_author"> by Eugene Soltes </h5>
+                        <p class="book_description"> Inside the mind of the white-collar criminal. book profiled fifty executives who exemplified, in the authors’ view, the defining characteristics of great leaders. They encouraged readers “to learn from and pattern themselves” after those they profiled in order to improve their own management acumen.  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> Why They Do It </h3>
+                    <div class="price"> ₱20 </div>
+                    <a href="#" data-id="8" data-price="20" data-title="Why They Do It" class="btn" data-image="book-3.png"> Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-2.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> Words that Change the Minds </div>
+                        <h5 class="book_author"> by Shelle Rose Charvet </h5>
+                        <p class="book_description"> Mastering the language of influence.
+                            Words That Change Minds is built around a tool known as the Language and Behaviour Profile, or LAB Profile, created by Rodger Bailey. The LAB Proflle is a development based on specific tools from Neuro-linguistic Programming.
+                             </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> Words that Change the Minds </h3>
+                    <div class="price"> ₱15 </div>
+                    <a href="#" data-id="9" data-price="15" data-title="Words that Change the Minds" class="btn" data-image="book-2.png"> Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="image">
+                    <img src="book-1.png" alt="">
+                    <div class="details_overlay details_overlay--blur">
+                        <div class="book_title"> Working in the Dark </div>
+                        <h5 class="book_author"> by Donald Campbell  </h5>
+                        <p class="book_description"> Working in the Dark focuses on the authors’ understanding of an individual’s pre-suicide state of mind, based on their work with many suicidal individuals, with special attention to those who attempted suicide while in treatment. </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3> Working in the Dark </h3>
+                    <div class="price"> ₱30 </div>
+                    <a href="#" data-id="10" data-price="30" data-title="Working in the Dark" class="btn" data-image="book-1.png"> Add to Cart </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-------Featured Section ends here----->
+
+<!------Newsletter Section starts here-->
+
+<section class="newsletter">
+    <form action="">
+        <h3>&#x2728; Subscribe for latest update &#x2728;</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="Subscribe" class="btn" onclick="AlertFunction()">
+    </form>
+
+</section>
+
+<!------Newsletter Section ends here-->
+
+<!------Arrival Section starts here-->
+
+<section class="arrivals" id="arrivals"> 
+    <h1 class="heading"> <span>	&#x1F4DA;New Arrivals</span></h1>
+    <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-11.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>30 Covert Emotional Manipulation Tactics</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-12.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Attacking Faulty Reasoning</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-13.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Banned Mind Control Techniques Unleashed</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-14.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Brain Hacks: 200+ ways to boost your brain power</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-15.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Brandwashed</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-16.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Controlling People</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-17.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Covert Narcissism</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-18.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Covert Persuasion</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-19.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Critical Thinking</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book-20.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Cultural Theory: The Key Thinkers</h3>
+                    <div class="price">₱30.99<span>₱40.99</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!------Arrival Section ends here-->
+
+<!------deal Section starts here-->
+
+<section class="deal">
+    <div class="content">
+        <h3> &#x2728; Deal of the Day &#x2728;</h3>
+        <h1> upto 60% off &#x1F4D6;</h1>
+        <p> &#x1F516;Lifetime access. No expiration. <br>
+            &#x1F516;Downloadable, so you may read it offline. <br>
+            &#x1F516;Accessible on any device. <br>
+            &#x1F516;Soft copy in PDF format. <br>
+            &#x1F516;These are digital books. We do not sell hardbound or physical book.
+            </p>
+        <a href="shop.html" class="btn"> Shop now!</a>
+    </div>
+
+    <div class="image">
+        <img src="deal1.gif" alt="">
+    </div>
+</section>
+
+<!------deal Section ends here-->
+
+<!------Authors Section starts here-->
+
+<sction class="authors" id="authors">
+    <h1 class="heading"><span>&#x1F4D6;Famous Authors</span></h1>
+    <div class="swiper authors-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="client-1.png" alt="">
+                <h3>Jake Deo</h3>
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <div class="connect">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-2.png" alt="">
+                <h3>Shane Delima</h3>
+                 <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <div class="connect">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-3.png" alt="">
+                <h3>Mikael Lao</h3>
+                 <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <div class="connect">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-4.png" alt="">
+                <h3>Lenz Guzman</h3>
+                 <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <div class="connect">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-5.png" alt="">
+                <h3>Eco Berona</h3>
+                 <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <div class="connect">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-6.png" alt="">
+                <h3> Lourence Benon</h3>
+                 <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                <div class="connect">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</sction>
+
+<!------Authors Section ends here-->
+
+
+<div class="quote"> 
+    <h2>“In the case of good books, the point is not to see how many of them you can get through, <br> but rather how many can get through to you.” <br> <span>- Mortimer J. Adler</span> </h2>
+</div>
+
+
+<!------Review Section starts here-->
+
+<sction class="reviews" id="reviews">
+    <h1 class="heading"><span> 	&#x270D; Reader's Review</span></h1>
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="client-1.png" alt="">
+                <h3>Jake Deo</h3>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime expedita omnis illo eaque excepturi laboriosam blanditiis harum beatae ea ipsa amet enim,</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-2.png" alt="">
+                <h3>Shane Delima</h3>
+                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime expedita omnis illo eaque excepturi laboriosam blanditiis harum beatae ea ipsa amet enim,</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-3.png" alt="">
+                <h3>Mikael Lao</h3>
+                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime expedita omnis illo eaque excepturi laboriosam blanditiis harum beatae ea ipsa amet enim, </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-4.png" alt="">
+                <h3>Renz Guzman</h3>
+                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime expedita omnis illo eaque excepturi laboriosam blanditiis harum beatae ea ipsa amet enim, </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-5.png" alt="">
+                <h3>Eco Berona</h3>
+                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime expedita omnis illo eaque excepturi laboriosam blanditiis harum beatae ea ipsa amet enim, </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="client-6.png" alt="">
+                <h3> Lourence Benon</h3>
+                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime expedita omnis illo eaque excepturi laboriosam blanditiis harum beatae ea ipsa amet enim, </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</sction>
+
+<!------Review Section ends here-->
+
+<!-----Blog Section starts here-->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading"><span> 	&#x270D; Our Blogs </span> </h1>
+    <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="blog-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3> Blog title goes here</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quaerat quam nam inventore aperiam aliquid impedit iusto placeat unde, repellendus sunt consequuntur voluptatibus ad minus incidunt nobis ut at quis?</p>
+                    <a href="#" class="btn"> read more </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="blog-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>  Blog title goes here</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quaerat quam nam inventore aperiam aliquid impedit iusto placeat unde, repellendus sunt consequuntur voluptatibus ad minus incidunt nobis ut at quis?</p>
+                    <a href="#" class="btn"> read more </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="blog-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>  Blog title goes here</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quaerat quam nam inventore aperiam aliquid impedit iusto placeat unde, repellendus sunt consequuntur voluptatibus ad minus incidunt nobis ut at quis?</p>
+                    <a href="#" class="btn"> read more </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="blog-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>  Blog title goes here</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quaerat quam nam inventore aperiam aliquid impedit iusto placeat unde, repellendus sunt consequuntur voluptatibus ad minus incidunt nobis ut at quis?</p>
+                    <a href="#" class="btn"> read more </a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image">
+                    <img src="blog-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>  Blog title goes here</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, quaerat quam nam inventore aperiam aliquid impedit iusto placeat unde, repellendus sunt consequuntur voluptatibus ad minus incidunt nobis ut at quis?</p>
+                    <a href="#" class="btn"> read more </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------Blog Section ends here-->
+
+<!------Footer Section starts here-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3> BooKlick</h3>
+            <p>An online bookstore where you can buy e-books listed in different genre at a lowest price.  
+                This platform allows users to search and purchase an ebook online based on title, author and subjects. 
+                Users can create and sign-in to their account, 
+                place items into a shopping cart and purchase using their credit/debit cards or e-wallet. </p>
+        </div>
+
+        <div class="box">
+            <h3> Quick Links</h3>
+            <a href="#home"><i class="fas fa-arrow-right"></i>Home </a>
+            <a href="#featured"><i class="fas fa-arrow-right"></i> Featured </a>
+            <a href="#arrivals"><i class="fas fa-arrow-right"></i> Arrivals</a>
+            <a href="#authors"><i class="fas fa-arrow-right"></i> Authors</a>
+            <a href="#publishers"><i class="fas fa-arrow-right"></i> Publishers</a>
+            <a href="#reviews"><i class="fas fa-arrow-right"></i> Reviews </a>
+            <a href="#blogs"><i class="fas fa-arrow-right"></i> Blogs </a>
+        </div>
+
+        <div class="box">
+            <h3> Other Links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i> Account Info </a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Ordered Items </a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Privacy Policy</a>
+            <a href="payment.html"><i class="fas fa-arrow-right"></i> Payment Method </a>
+            <a href="#"><i class="fas fa-arrow-right"></i> Our Services </a>
+        </div>
+
+        <div class="box">
+            <h3> Contact Info </h3>
+            <a href="#"><i class="fas fa-phone"></i> +123-456-789 </a>
+            <a href="#"><i class="fas fa-phone"></i> +101-202-303 </a>
+            <a href="#"><i class="fas fa-envelope"></i> bookliick@gmail.com </a>
+            <br>
+            <br> 
+            <h3> Payment Method </h3>
+        
+            <div class="pay">
+            <a href="payment.html"><img src="paypal.png" alt="paypal"></a>
+            <a href="payment.html"><img src="gcash.png" alt="gcash"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="share">
+        <a href="https://www.facebook.com/profile.php?id=100090220410695" class="fab fa-facebook-f"></a>
+        <a href="https://www.facebook.com/profile.php?id=100090220410695" class="fab fa-twitter"></a>
+        <a href="https://www.facebook.com/profile.php?id=100090220410695" class="fab fa-instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=100090220410695" class="fab fa-linkedin"></a>
+        <a href="https://www.facebook.com/profile.php?id=100090220410695" class="fab fa-pinterest"></a>
+    </div>
+    <div class="owner"> @2023 Created with love by<span> Darwin Besorio, RL</span> <br>| All Right Reserved! </div>
+</section>
+
+<!------Footer Section ends here-->
+
+
+
+
+ <!----custom js file link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js" async></script>
+
+</body>
+</html>
